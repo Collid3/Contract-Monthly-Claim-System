@@ -23,7 +23,7 @@ namespace ContractMonthlyClaimSystem.Controllers
             return View();
         }
 
-        public IActionResult handleLogin()
+        public IActionResult HandleLogin()
         {
             return RedirectToAction("Index");
         }
@@ -33,7 +33,7 @@ namespace ContractMonthlyClaimSystem.Controllers
             return View();
         }
 
-        public IActionResult handleRegister()
+        public IActionResult HandleRegister()
         {
             return RedirectToAction("Index");
         }
@@ -41,6 +41,11 @@ namespace ContractMonthlyClaimSystem.Controllers
         public IActionResult Admin()
         {
             return View();
+        }
+
+        public IActionResult SubmitClaim()
+        {
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form asp-action="SubmitClaim">
+    <label>Amount</label>
+    <input class="form-control" type="number" placeholder="R1000.00" />
+
+    <label>Description</label>
+    <input class="form-control" type="text" placeholder="Description" />
+
+    <label>Supporting documents (optional)</label>
+    <input class="form-control" type="file" />
+
+    <button type="submit">Submit</button>
+</form>
