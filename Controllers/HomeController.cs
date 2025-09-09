@@ -43,6 +43,16 @@ namespace ContractMonthlyClaimSystem.Controllers
             return View();
         }
 
+        public IActionResult AddClaim()
+        {
+            return View();
+        }
+
+        public IActionResult VerifyClaims()
+        {
+            return View();
+        }
+
         public IActionResult SubmitClaim()
         {
             return RedirectToAction("Index");
