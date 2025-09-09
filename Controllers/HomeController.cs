@@ -18,6 +18,31 @@ namespace ContractMonthlyClaimSystem.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult handleLogin()
+        {
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        public IActionResult handleRegister()
+        {
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Admin()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

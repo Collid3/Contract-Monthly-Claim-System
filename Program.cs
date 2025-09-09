@@ -11,7 +11,6 @@ namespace ContractMonthlyClaimSystem
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<ClaimSystemDBContext>(options => options.UseInMemoryDatabase("claimSystemDB"));
 
             var app = builder.Build();
 
