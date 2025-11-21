@@ -5,6 +5,7 @@ namespace ContractMonthlyClaimSystem.Models
         public int Id { get; set; }
         public int HoursWorked { get; set;}
         public double HourlyRate { get; set; }
+        public bool Verified {get; set;}
         public string? AdditionalNotes { get; set; }
         public string? SubmissionDate { get; set; }
         public string? SupportingDocument { get; set; }

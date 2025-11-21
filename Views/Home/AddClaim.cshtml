@@ -15,7 +15,7 @@
     <input class="form-control" type="text" placeholder="additional-notes" asp-for="AdditionalNotes" />
 
     <label>Supporting documents (optional)</label>
-    <input class="form-control" type="file" asp-for="SupportingDocument" />
+    <input class="form-control" type="file" accept=".pdf,.docx,.xls,.xlsx" asp-for="SupportingDocument" />
 
     <button type="submit">Submit</button>
 </form>

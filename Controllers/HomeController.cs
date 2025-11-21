@@ -86,14 +86,39 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
 
-    public IActionResult VerifyClaim()
+    public IActionResult VerifyClaim(int? id)
     {
-        return View();
+
+        if (id != null)
+        {
+            var editedclaim = _context.Claims.SingleOrDefault(claim => claim.Id == id);
+
+            if (editedclaim != null)
+            {
+                editedclaim.Status = "Approved";   
+                _context.SaveChanges();
+            }
+
+        }
+
+        return RedirectToAction("VerifyClaims");
     }
 
-    public IActionResult RejectClaim()
+    public IActionResult RejectClaim(int? id)
     {
-        return View();
+        if (id != null)
+        {
+            var editedclaim = _context.Claims.SingleOrDefault(claim => claim.Id == id);
+
+            if (editedclaim != null)
+            {
+                editedclaim.Status = "Rejected";             
+                _context.SaveChanges();
+            }
+
+        }
+
+        return RedirectToAction("VerifyClaims");
     }
 
     public IActionResult AcceptClaim()

@@ -28,8 +28,8 @@
                     <td>@claim.SubmissionDate</td>
                     <td>@claim.Status</td>
                     <td>
-                        <button asp-action="verify-claim">Verify</button>
-                        <button asp-action="reject-claim">Reject</button>
+                        <a asp-action="verifyClaim" asp-route-id="@claim.Id">Verify</a>
+                        <a asp-action="rejectClaim" asp-route-id="@claim.Id">Reject</a>
                     </td>
                 </tr>
             }
