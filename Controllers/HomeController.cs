@@ -22,71 +22,40 @@ public class HomeController : Controller
         return View(allClaims);
     }
 
-    public IActionResult Privacy()
+    public IActionResult AddClaim()
     {
         return View();
     }
 
-    public IActionResult Login()
+    public IActionResult VerifyClaims()
+    {
+        var allClaims = _context.Claims.ToList();
+        return View(allClaims);
+    }
+
+    public IActionResult SubmitClaim(Claim claim)
+    {
+        var allClaims = _context.Claims.ToList();
+        int id;
+
+        if (allClaims.Count > 0)
         {
-            return View();
+            id = allClaims[allClaims.Count - 1].Id + 1;
+        } else
+        {
+            id = 0;
         }
 
-        public IActionResult HandleLogin()
-        {
-            return RedirectToAction("Index");
-        }
+        claim.Id = id;
+        claim.Status = "Pending";
+        claim.SubmissionDate = DateTime.Today;
+        _context.Add(claim);
+        _context.SaveChanges();
 
-        public IActionResult Register()
-        {
-            return View();
-        }
+        return RedirectToAction("Index");
+    }
 
-        public IActionResult HandleRegister()
-        {
-            return RedirectToAction("Index");
-        }
-
-        public IActionResult Admin()
-        {
-            var allClaims = _context.Claims.ToList();
-            return View(allClaims);
-        }
-
-        public IActionResult AddClaim()
-        {
-            return View();
-        }
-
-        public IActionResult VerifyClaims()
-        {
-            var allClaims = _context.Claims.ToList();
-            return View(allClaims);
-        }
-
-        public IActionResult SubmitClaim(Claim claim)
-        {
-            var allClaims = _context.Claims.ToList();
-            int id;
-
-            if (allClaims.Count > 0)
-            {
-                id = allClaims[allClaims.Count - 1].Id + 1;
-            } else
-            {
-                id = 0;
-            }
-
-            claim.Id = id;
-            claim.Status = "Pending";
-            claim.SubmissionDate = DateTime.Now.ToString("dd/MM/yyyy");
-            _context.Add(claim);
-            _context.SaveChanges();
-
-            return RedirectToAction("Index");
-        }
-
-    public IActionResult VerifyClaim(int? id)
+    public IActionResult ApproveClaim(int? id)
     {
 
         if (id != null)
@@ -98,7 +67,6 @@ public class HomeController : Controller
                 editedclaim.Status = "Approved";   
                 _context.SaveChanges();
             }
-
         }
 
         return RedirectToAction("VerifyClaims");
@@ -121,10 +89,11 @@ public class HomeController : Controller
         return RedirectToAction("VerifyClaims");
     }
 
-    public IActionResult AcceptClaim()
+        public IActionResult Profile()
     {
         return View();
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {}
+    "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {}
   },
   "projects": {
-    "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {
+    "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
+        "projectUniqueName": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
         "projectName": "ContractMonthlyClaimSystem",
-        "projectPath": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
+        "projectPath": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
         "packagesPath": "C:\\Users\\masol\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\obj\\",
+        "outputPath": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\masol\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ePQ6NuanxSw=",
+  "dgSpecHash": "jDcL5MtvoHM=",
   "success": true,
-  "projectFilePath": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
+  "projectFilePath": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\masol\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\masol\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\masol\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\masol\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\masol\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\masol\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0\\microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",

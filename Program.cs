@@ -1,11 +1,19 @@
 using ContractMonthlyClaimSystem.Models;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ClaimDbContext>(options => options.UseInMemoryDatabase("Claim"));
+builder.Services.AddControllersWithViews(static options =>
+{
+    options.ModelValidatorProviders.Clear();
+});
+builder.Services.AddDbContext<ClaimDbContext>(static options => options.UseInMemoryDatabase("Claim"));
+
+builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<Claim>();
 
 var app = builder.Build();
 
