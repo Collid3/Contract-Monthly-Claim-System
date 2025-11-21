@@ -1,5 +1,5 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Claims Overview";
 }
 
 @model List<Claim>
@@ -7,7 +7,7 @@
 <div class="text-center" >
     <h1 class="display-4">Welcome</h1>
     
-    <table class="table">
+    <table>
         <thead>
             <tr>
                 <th>ClaimID</th>
@@ -19,19 +19,12 @@
         </thead>
 
         <tbody>
-            @* <tr>
-                <td>001</td>
-                <td>R2500.00</td>
-                <td>Description 1</td>
-                <td>Pending</td>
-                <td>22-05-1998</td>
-            </tr> *@
 
             @{
                 foreach (var claim in Model) {
                     <tr>
                         <td>@claim.Id</td>
-                        <td>@(@claim.HoursWorked * @claim.HourlyRate)</td>
+                        <td>@claim.HoursWorked</td>
                         <td>@claim.AdditionalNotes</td>
                         <td>@claim.Status</td>
                         <td>@claim.SubmissionDate</td>

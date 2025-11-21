@@ -4,9 +4,7 @@
 @{
 }
 
-<div>
-
-   <h2>Respond Claims</h2>
+@model List<Claim>
 
 <table>
     <thead>
@@ -21,54 +19,21 @@
     </thead>
 
     <tbody>
-            <tr>
-                <td>001</td>
-                <td>R2500.00</td>
-                <td>Description 1</td>
-                <td>22-05-1998</td>
-                <td>Pending</td>
-                <td>
-                    <button>Approve</button>
-                    <button>Reject</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td>R1800.00</td>
-                <td>Description 2</td>
-                <td>28-05-1998</td>
-                <td>Approved</td>
-                <td>
-                    <button>Approve</button>
-                    <button>Reject</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>003</td>
-                <td>R3400.00</td>
-                <td>Description 3</td>
-                <td>07-06-1998</td>
-                <td>Approved</td>
-                <td>
-                    <button>Approve</button>
-                    <button>Reject</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>004</td>
-                <td>R730.00</td>
-                <td>Description 4</td>
-                <td>16-06-1998</td>
-                <td>Rejected</td>
-                <td>
-                    <button>Approve</button>
-                    <button>Reject</button>
-                </td>
-            </tr>
+        @{
+            foreach (var claim in Model) {
+                <tr>
+                    <td>@claim.Id</td>
+                    <td>@(@claim.HourlyRate * @claim.HoursWorked)</td>
+                    <td>@claim.AdditionalNotes</td>
+                    <td>@claim.SubmissionDate</td>
+                    <td>@claim.Status</td>
+                    <td>
+                        <button asp-action="accept-claim">Verify</button>
+                        <button asp-action="reject-claim">Reject</button>
+                    </td>
+                </tr>
+            }
+        }
     </tbody>
 
 </table>
-</div>

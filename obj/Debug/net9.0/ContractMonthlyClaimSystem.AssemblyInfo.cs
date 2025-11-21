@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContractMonthlyClaimSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c3fd0500e478cee18a5ff67aa6b14c826bbad68")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContractMonthlyClaimSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContractMonthlyClaimSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

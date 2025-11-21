@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {}
+    "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {
+    "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
+        "projectUniqueName": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
         "projectName": "ContractMonthlyClaimSystem",
-        "projectPath": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
+        "projectPath": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\ContractMonthlyClaimSystem.csproj",
         "packagesPath": "C:\\Users\\masol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\obj\\",
+        "outputPath": "c:\\Users\\masol\\Documents\\Skolo\\Year 2\\Semester 2\\PROG6212\\POE\\Contract-Monthly-Claim-System-POE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\masol\\AppData\\Roaming\\NuGet\\NuGet.Config"

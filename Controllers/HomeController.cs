@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ContractMonthlyClaimSystem.Models;
+using Microsoft.VisualBasic;
 
 namespace ContractMonthlyClaimSystem.Controllers;
 
@@ -17,7 +18,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var allClaims = _context.Claims.ToList();
+        return View(allClaims);
     }
 
     public IActionResult Privacy()
@@ -47,7 +49,8 @@ public class HomeController : Controller
 
         public IActionResult Admin()
         {
-            return View();
+            var allClaims = _context.Claims.ToList();
+            return View(allClaims);
         }
 
         public IActionResult AddClaim()
@@ -57,16 +60,46 @@ public class HomeController : Controller
 
         public IActionResult VerifyClaims()
         {
-            return View();
+            var allClaims = _context.Claims.ToList();
+            return View(allClaims);
         }
 
         public IActionResult SubmitClaim(Claim claim)
         {
-            // _context.Add(claim);
-            // _context.SaveChanges();
+            var allClaims = _context.Claims.ToList();
+            int id;
+
+            if (allClaims.Count > 0)
+            {
+                id = allClaims[allClaims.Count - 1].Id + 1;
+            } else
+            {
+                id = 0;
+            }
+
+            claim.Id = id;
+            claim.Status = "Pending";
+            claim.SubmissionDate = DateTime.Now.ToString("dd/MM/yyyy");
+            _context.Add(claim);
+            _context.SaveChanges();
 
             return RedirectToAction("Index");
         }
+
+    public IActionResult VerifyClaim()
+    {
+        return View();
+    }
+
+    public IActionResult RejectClaim()
+    {
+        return View();
+    }
+
+    public IActionResult AcceptClaim()
+    {
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
