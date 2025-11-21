@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Add Claim";
+}
+
+@model ContractMonthlyClaimSystem.Models.Claim
+
+<form asp-action="SubmitClaim" asp-controller="Home">
+    <label>Hours worked</label>
+    <input class="form-control" type="number" placeholder="R1000.00" asp-for="HoursWorked" />
+
+    <label>Hourly rate</label>
+    <input class="form-control" type="number" placeholder="R1000.00" asp-for="HourlyRate" />
+
+    <label>Additional notes</label>
+    <input class="form-control" type="text" placeholder="additional-notes" asp-for="AdditionalNotes" />
+
+    <label>Supporting documents (optional)</label>
+    <input class="form-control" type="file" asp-for="SupportingDocument" />
+
+    <button type="submit">Submit</button>
+</form>
