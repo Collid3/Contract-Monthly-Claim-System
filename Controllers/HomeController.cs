@@ -48,7 +48,7 @@ public class HomeController : Controller
 
         claim.Id = id;
         claim.Status = "Pending";
-        claim.SubmissionDate = DateTime.Today;
+        claim.SubmissionDate = DateTime.Now.ToString("dd/MM/yyyy");
         _context.Add(claim);
         _context.SaveChanges();
 

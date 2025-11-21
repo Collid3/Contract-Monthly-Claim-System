@@ -28,8 +28,9 @@
                     <td>@claim.SubmissionDate.ToString()</td>
                     <td>@claim.Status</td>
                     <td>
-                        <a asp-action="ApproveClaim" asp-route-id="@claim.Id">Verify</a>
-                        <a asp-action="RejectClaim" asp-route-id="@claim.Id">Reject</a>
+                        <a class="px-4 py-2 text-decoration-none rounded" style="background-color: green; color: white;" asp-action="ApproveClaim" asp-route-id="@claim.Id">Verify</a>
+
+                        <a class="px-4 py-2 text-decoration-none rounded" style="background-color: red; color: white;"  asp-action="RejectClaim" asp-route-id="@claim.Id">Reject</a>
                     </td>
                 </tr>
             }
