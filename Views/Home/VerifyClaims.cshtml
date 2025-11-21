@@ -25,7 +25,7 @@
                     <td>@claim.Id</td>
                     <td>@(@claim.HourlyRate * @claim.HoursWorked)</td>
                     <td>@claim.AdditionalNotes</td>
-                    <td>@claim.SubmissionDate.ToString()</td>
+                    <td>@claim.SubmissionDate</td>
                     <td>@claim.Status</td>
                     <td>
                         <a class="px-4 py-2 text-decoration-none rounded" style="background-color: green; color: white;" asp-action="ApproveClaim" asp-route-id="@claim.Id">Verify</a>

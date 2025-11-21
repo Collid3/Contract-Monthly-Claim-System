@@ -2,6 +2,28 @@
     ViewData["Title"] = "Profile Page";
 }
 
-<div>
-    <h1>Profile Page</h1>
-</div>
+<h2>Edit Profile</h2>
+
+<br>
+
+<h4>Current Information</h4>
+<b>Full Name: Nelson Madiba Mandela</b>
+<p>Email Address: Nelson1994@gmail.com</p>
+
+
+<form asp-action="UpdateProfile" asp-controller="Home">
+    <label>First Name(s)</label>
+    <input type="text" placeholder="Nelson Madiba" />
+
+    <label>Last Name</label>
+    <input class="form-control" type="text" placeholder="Mandela" />
+
+    <label>Email Address</label>
+    <input class="form-control" type="text" placeholder="" />
+
+    <a href="">Request Link to change your Password by clicking <span>Here</span>.</a>
+
+    <br>
+
+    <button type="submit">Update</button>
+</form>
