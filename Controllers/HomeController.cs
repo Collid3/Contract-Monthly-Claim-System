@@ -94,6 +94,11 @@ public class HomeController : Controller
         return View();
     }
 
+        public IActionResult UpdateProfile()
+    {
+        return RedirectToAction("Index");
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
