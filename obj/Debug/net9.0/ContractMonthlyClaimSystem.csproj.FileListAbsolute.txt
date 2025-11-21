@@ -189,8 +189,6 @@ C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-C
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\47zdvjw6p9-muycvpuwrr.gz
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\jfi7i0soz2-87fc7y1x7t.gz
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\juzq2h5cbk-jfsiqqwiad.gz
-C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\gbo243wwe5-pfar5irzpr.gz
-C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\7zhpsp2398-pfar5irzpr.gz
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\staticwebassets.development.json
@@ -201,3 +199,9 @@ C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-C
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\ContractMonthlyClaimSystem.pdb
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\ContractMonthlyClaimSystem.genruntimeconfig.cache
 C:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\ref\ContractMonthlyClaimSystem.dll
+c:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\bin\Debug\net9.0\FluentValidation.dll
+c:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+c:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+c:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\ContractMonthlyClaimSystem.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\gbo243wwe5-10axkex3ms.gz
+c:\Users\masol\Documents\Skolo\Year 2\Semester 2\PROG6212\POE\Contract-Monthly-Claim-System-POE\obj\Debug\net9.0\compressed\7zhpsp2398-10axkex3ms.gz
