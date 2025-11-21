@@ -1,3 +1,4 @@
+
 @{
     ViewData["Title"] = "Profile Page";
 }
@@ -12,18 +13,18 @@
 
 
 <form asp-action="UpdateProfile" asp-controller="Home">
-    <label>First Name(s)</label>
-    <input type="text" placeholder="Nelson Madiba" />
+    <label class="mt-4">First Name(s)</label>
+    <input class="form-control" type="text" placeholder="Nelson Madiba" />
 
-    <label>Last Name</label>
+    <label class="mt-2">Last Name</label>
     <input class="form-control" type="text" placeholder="Mandela" />
 
-    <label>Email Address</label>
+    <label class="mt-2 mb-2">Email Address</label>
     <input class="form-control" type="text" placeholder="" />
 
-    <a href="">Request Link to change your Password by clicking <span>Here</span>.</a>
+    <a href="" style="text-white">Request Link to change your Password by clicking <span style="text-primary">Here</span>.</a>
 
     <br>
 
-    <button type="submit">Update</button>
+    <button class="mt-4 px-4 py-2 bg-primary border-0 rounded text-white" type="submit">Update</button>
 </form>
